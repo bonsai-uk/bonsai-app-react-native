@@ -7,19 +7,13 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-<<<<<<< HEAD
     "lint": "eslint .",
     "prettier": "npx prettier --write . --log-level silent",
     "format": "yarn prettier & eslint . --fix",
-=======
->>>>>>> c1e228a5f81dec2899b85cb8b5fe83e335c7bf87
     "test": "jest --watch --coverage"
   },
   "jest": {
-    "preset": "jest-expo",
-    "transformIgnorePatterns": [
-      "node_modules/(?!((jest-)?react-native|@react-native(-community)?)|expo(nent)?|@expo(nent)?/.*|@expo-google-fonts/.*|react-navigation|@react-navigation/.*|@unimodules/.*|unimodules|sentry-expo|native-base|react-native-svg)"
-    ]
+    "preset": "jest-expo"
   },
   "dependencies": {
     "expo": "~49.0.15",
