@@ -1,9 +1,6 @@
 import {
-  Image,
   SafeAreaView,
   StyleSheet,
-  Text,
-  TextInput,
   View,
 } from 'react-native';
 import Title from '../../components/Title/Title';

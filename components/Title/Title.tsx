@@ -1,6 +1,5 @@
 import { Image, Text, View } from 'react-native';
 import { styles } from './Title.styles';
-import React from 'react';
 
 export default function Title({ subheading }: { subheading?: string }) {
   return (
