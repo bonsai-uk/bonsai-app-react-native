@@ -1,6 +1,14 @@
 {
+<<<<<<< HEAD
   "extends": "@tsconfig/react-native/tsconfig.json",
   "compilerOptions": {
     "types": ["@types/styled-components-react-native", "@types/jest"]
   }
 }
+=======
+    "extends": "@tsconfig/react-native/tsconfig.json",
+    "compilerOptions": {
+      "types": ["@types/styled-components-react-native", "@types/jest"]
+    },
+  }
+>>>>>>> c1e228a5f81dec2899b85cb8b5fe83e335c7bf87
