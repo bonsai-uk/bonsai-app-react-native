@@ -1,28 +1,34 @@
 import {
-  SafeAreaView,
-  StyleSheet,
-  View,
-} from 'react-native';
-import Title from '../../components/Title/Title';
+    AppleSignIn,
+    Divider,
+    GoogleSignIn,
+    Input,
+    NewAccount,
+    SolidButton,
+    Title,
+} from '../../components';
+import { SafeAreaView, View } from 'react-native';
+import { styles } from './LoginScreen.styles';
 
 export default function LoginScreen() {
-  return (
-    <SafeAreaView style={styles.root}>
-      <View style={styles.container}>
-        <Title subheading="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod" />
-      </View>
-    </SafeAreaView>
-  );
+    return (
+        <SafeAreaView style={styles.root}>
+            <View style={styles.container}>
+                <Title subheading="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod" />
+                <View style={styles.inputContainers}>
+                    <Input placeholder="Email" iconName="envelope" />
+                    <Input
+                        placeholder="Password"
+                        iconName="lock"
+                        secureTextEntry
+                    />
+                    <SolidButton title="Login" />
+                    <Divider />
+                    <AppleSignIn />
+                    <GoogleSignIn />
+                </View>
+                <NewAccount />
+            </View>
+        </SafeAreaView>
+    );
 }
-
-const styles = StyleSheet.create({
-  root: {
-    backgroundColor: '#FBFCF6',
-    flex: 1,
-  },
-
-  container: {
-    flex: 1,
-    alignItems: 'center',
-  },
-});
