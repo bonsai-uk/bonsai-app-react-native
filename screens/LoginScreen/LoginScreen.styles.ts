@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Platform } from 'react-native';
 
 export const styles = StyleSheet.create({
     root: {
@@ -10,6 +10,7 @@ export const styles = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         marginTop: 38,
+        paddingTop: Platform.OS === 'android' ? 48 : 0,
     },
 
     inputContainers: {
