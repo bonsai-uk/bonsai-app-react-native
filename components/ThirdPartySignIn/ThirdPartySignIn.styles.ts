@@ -3,15 +3,29 @@ import { StyleSheet } from 'react-native';
 export const styles = StyleSheet.create({
     button: {
         width: '100%',
-        backgroundColor: '#126444',
         padding: 8,
         flexDirection: 'row',
         alignItems: 'center',
         gap: 18,
     },
 
-    text: {
+    AppleBrandGuidelines: {
+        backgroundColor: '#126444',
+    },
+
+    AppleBrandGuidelinesText: {
         color: '#FBFCF6',
+    },
+
+    GoogleBrandGuidelines: {
+        backgroundColor: '#F2F2F2',
+    },
+
+    GoogleBrandGuidelinesText: {
+        color: '#1F1F1F',
+    },
+
+    text: {
         fontSize: 18,
     },
 

@@ -1,10 +1,9 @@
 import {
-    AppleSignIn,
     Divider,
-    GoogleSignIn,
     Input,
     NewAccount,
     SolidButton,
+    ThirdPartySignIn,
     Title,
 } from '../../components';
 import { Platform, SafeAreaView, View } from 'react-native';
@@ -24,8 +23,10 @@ export default function LoginScreen() {
                     />
                     <SolidButton title="Login" />
                     <Divider />
-                    {Platform.OS === 'ios' && <AppleSignIn />}
-                    <GoogleSignIn />
+                    {Platform.OS === 'ios' && (
+                        <ThirdPartySignIn thirdParty="Apple" />
+                    )}
+                    <ThirdPartySignIn thirdParty="Google" />
                 </View>
                 <NewAccount />
             </View>
