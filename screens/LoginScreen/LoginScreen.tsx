@@ -7,7 +7,7 @@ import {
     SolidButton,
     Title,
 } from '../../components';
-import { SafeAreaView, View } from 'react-native';
+import { Platform, SafeAreaView, View } from 'react-native';
 import { styles } from './LoginScreen.styles';
 
 export default function LoginScreen() {
@@ -24,7 +24,7 @@ export default function LoginScreen() {
                     />
                     <SolidButton title="Login" />
                     <Divider />
-                    <AppleSignIn />
+                    {Platform.OS === 'ios' && <AppleSignIn />}
                     <GoogleSignIn />
                 </View>
                 <NewAccount />
