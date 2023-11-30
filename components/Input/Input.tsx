@@ -1,10 +1,12 @@
 import { TextInput, View } from 'react-native';
 import { GlobalStyles } from '../../styles';
+import Icon from '../Icon';
 import { SimpleLineIcons } from '@expo/vector-icons';
 import { styles } from './Input.styles';
 
 type InputProps = {
     placeholder: string;
+    iconSource?: Icons.source;
     iconName?: keyof typeof SimpleLineIcons.glyphMap;
     secureTextEntry?: true;
 };
@@ -13,6 +15,7 @@ export default function Input({
     placeholder,
     secureTextEntry,
     iconName,
+    iconSource,
 }: InputProps) {
     return (
         <View
@@ -23,8 +26,8 @@ export default function Input({
                 GlobalStyles.bevel,
                 GlobalStyles.greenOutline,
             ]}>
-            {iconName && (
-                <SimpleLineIcons name={iconName} size={24} color="#23C686" />
+            {iconName && iconSource && (
+                <Icon iconName={iconName} iconSource={iconSource} />
             )}
             <TextInput
                 autoCapitalize="none"
