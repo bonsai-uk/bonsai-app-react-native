@@ -15,10 +15,15 @@ export default function LoginScreen() {
             <View style={styles.container}>
                 <Title subheading="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod" />
                 <View style={styles.inputContainers}>
-                    <Input placeholder="Email" iconName="envelope" />
+                    <Input
+                        placeholder="Email"
+                        iconName="envelope"
+                        iconSource="SimpleLineIcons"
+                    />
                     <Input
                         placeholder="Password"
                         iconName="lock"
+                        iconSource="SimpleLineIcons"
                         secureTextEntry
                     />
                     <SolidButton title="Login" />
